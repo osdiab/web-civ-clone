@@ -13,11 +13,11 @@ const sharedConfig = {
   },
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: ["ts-loader"]
+        loader: "ts-loader"
       }
     ]
   }

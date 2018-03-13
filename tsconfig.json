@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "noErrorTruncation": true,
+    "jsx": "react",
+    "outDir": "__build",
+    "module": "commonjs",
+    "target": "es2015",
+    "rootDir": ".",
+    "noImplicitReturns": true,
+    "strict": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "typeRoots": ["./types", "node_modules/@types"],
+    "baseUrl": ".",
+
+    // If you update paths, don't forget to also
+    // update the aliases member of webpack.config.js.
+    "paths": {
+      "frontend/*": ["./src/frontend/*"],
+      "common/*": ["./src/common/*"],
+      "backend/*": ["./src/backend/*"]
+    },
+    "lib": ["es2017", "dom"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
